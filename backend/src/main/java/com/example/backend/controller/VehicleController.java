@@ -23,7 +23,7 @@ public class VehicleController {
     private final GeometryFactory geometryFactory = new GeometryFactory();
 
     // 新增车辆，并带上经纬度
-    @GetMapping("/add")
+    @PostMapping("/add")
     public String addVehicle(
             @RequestParam(defaultValue = "皖A·88888") String plateNo,
             @RequestParam(defaultValue = "116.397") double lng, // 默认北京故宫经度
